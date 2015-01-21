@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y\
   google-chrome-stable\
   && apt-get clean
 
-RUN useradd -u 1000 -m jray && chown -R jray: /home/jray
+RUN useradd -u 1000 -m dev
 
-USER jray
+USER dev 
 
 CMD ["/usr/bin/google-chrome", "-no-sandbox", "-user-data-dir"]

@@ -24,3 +24,5 @@ To maintain your data run:
 This will mount your home directory inside the container and thus save your data in ~/.config/google-chrome
 
 Feel free to swap out the --rm directive for -d to run the container in the background or change the username so that it mathes your own before you build the container.
+
+Also in order for chrome to run you have to disable its sandboxing feature. That is done in the CMD directive of the Dockerfile.
